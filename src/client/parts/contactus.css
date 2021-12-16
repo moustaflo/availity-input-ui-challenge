@@ -1,0 +1,89 @@
+.contactUsBackgroundContainer {
+    background-image: url('../../../public/contactusbackground.jpeg');
+    background-size:cover;
+}
+.contactUsContainer {
+    background:rgba(255,255,255, 0.6);
+    padding: 4rem 1% 4rem 1%;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 480px){
+    .contactUsTopParagraphDiv {
+        font-size: 5rem;
+        padding: 0 15% 4rem 15%;
+        color: #de950d;
+    }
+    .formContainerDiv {
+        width: 90%;
+    }
+  }
+  @media screen and (min-width: 800px){
+    .contactUsTopParagraphDiv {
+        padding-top: 100px;
+        width: 50%;
+        font-size: 5rem;
+        color: #de950d;
+    }
+    .formContainerDiv {
+        width: 50%;
+    }
+  }
+
+.smallerCaption {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.formStyle {
+    width: 90%;
+    margin-left: 5%;
+    padding: 1rem 0 1rem 0;
+    font-size: 1.4rem;
+    text-align: center;
+    color: black;
+    background-color: rgb(192,192,192, .9);
+    box-shadow: 2px 2px 5px grey;
+}
+.textInput {
+    width: 80%;
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    text-shadow: 5px 5px 7px grey;
+}
+#emailvalidator:invalid {
+    border-color: red;
+}
+#phoneValidator:invalid {
+    border-color: red;
+}
+
+.g-recaptcha {
+    margin-bottom: 30px;
+    display: inline-block;
+}
+.submitBotton:disabled {
+    background-color: gray;
+    color:lightgray;
+}
+.submitBotton {
+    width: 35%;
+    font-size: 20px;
+    background-color: white;
+    color: #de950d;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid #de950d;
+    border-radius: 5%;
+    box-shadow: 2px 2px 5px grey;
+}
+.submitBotton:hover:enabled {
+    background-color:#de950d;
+    color: white;
+    border: 2px solid white;
+
+}
+.submitBotton:active:enabled {
+    background-color: #de950d;
+    color: black;
+
+}
