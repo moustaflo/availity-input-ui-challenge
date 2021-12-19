@@ -18,11 +18,11 @@ In the project directory, you can run:
 
 ### `npm install`
 
-### `npm start`
+### `npm run dev`
 
 Runs the app in production mode.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
-Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## reCAPTCHA
 

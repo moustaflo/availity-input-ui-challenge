@@ -34,16 +34,16 @@ router.post('/', async (req, res, next) => {
 
     //Input validator function
     const validateInput = () => {
-      const firstName = req.body.firstName.toString();
-      const lastName = req.body.lastName.toString();
-      const npiNumber = req.body.npiNumber.toString();
-      const streetAddress = req.body.streetAddress.toString();
-      const aptOrSuiteOrOther = req.body.aptOrSuiteOrOther.toString();
-      const city = req.body.city.toString();
-      const currentState = req.body.currentState.toString();
-      const zipCode = req.body.zipCode.toString();
-      const telephoneNumber = req.body.telephoneNumber.toString();
-      const emailAddress = req.body.emailAddress.toString().toLowerCase();
+      const firstName = req.body.firstName.toString().trim();
+      const lastName = req.body.lastName.toString().trim();
+      const npiNumber = req.body.npiNumber.toString().trim();
+      const streetAddress = req.body.streetAddress.toString().trim();
+      const aptOrSuiteOrOther = req.body.aptOrSuiteOrOther.toString().trim();
+      const city = req.body.city.toString().trim();
+      const currentState = req.body.currentState.toString().trim();
+      const zipCode = req.body.zipCode.toString().trim();
+      const telephoneNumber = req.body.telephoneNumber.toString().trim();
+      const emailAddress = req.body.emailAddress.toString().toLowerCase().trim();
       //Regex checkers
       const emailChecker = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/;
       const phoneChecker = /[0-9]{10}/;
